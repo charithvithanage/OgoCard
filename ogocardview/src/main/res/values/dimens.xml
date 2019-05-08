@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="buttonPadding">10dp</dimen>
+    <dimen name="btnFontSize">16sp</dimen>
+
 </resources>
