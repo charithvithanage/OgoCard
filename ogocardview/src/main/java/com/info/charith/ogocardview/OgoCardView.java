@@ -1,11 +1,14 @@
 package com.info.charith.ogocardview;
 
+import android.annotation.TargetApi;
 import android.content.Context;
+import android.os.Build;
 import android.support.design.widget.TextInputEditText;
 import android.text.Editable;
 import android.text.Spannable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -27,6 +30,28 @@ public class OgoCardView extends LinearLayout {
 
     public OgoCardView(Context context) {
         super(context);
+        this.mContext=context;
+
+        init();
+    }
+
+    public OgoCardView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        this.mContext=context;
+
+        init();
+    }
+
+    public OgoCardView(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        this.mContext=context;
+
+        init();
+    }
+
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    public OgoCardView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
         this.mContext=context;
 
         init();
