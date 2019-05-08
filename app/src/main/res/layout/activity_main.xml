@@ -3,11 +3,12 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
         tools:context=".MainActivity">
 
     <com.info.charith.ogocardview.OgoCardView
-            android:id="@+id/cardView" android:layout_width="match_parent"
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
     >
     </com.info.charith.ogocardview.OgoCardView>
